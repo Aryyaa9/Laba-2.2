@@ -1,0 +1,14 @@
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\bin\Debug\net8.0\fourth.exe
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\bin\Debug\net8.0\fourth.deps.json
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\bin\Debug\net8.0\fourth.runtimeconfig.json
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\bin\Debug\net8.0\fourth.dll
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\bin\Debug\net8.0\fourth.pdb
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\obj\Debug\net8.0\fourth.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\obj\Debug\net8.0\fourth.AssemblyInfoInputs.cache
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\obj\Debug\net8.0\fourth.AssemblyInfo.cs
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\obj\Debug\net8.0\fourth.csproj.CoreCompileInputs.cache
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\obj\Debug\net8.0\fourth.dll
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\obj\Debug\net8.0\refint\fourth.dll
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\obj\Debug\net8.0\fourth.pdb
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\obj\Debug\net8.0\fourth.genruntimeconfig.cache
+C:\Users\gr624_choaad\RiderProjects\fourth\fourth\obj\Debug\net8.0\ref\fourth.dll
