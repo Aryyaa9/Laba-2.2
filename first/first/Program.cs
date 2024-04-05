@@ -1,7 +1,6 @@
 ﻿using System;
 class Student
 {
-    // Поля класса
     private string lastName;
     private DateTime dateOfBirth;
     private string groupNumber;
@@ -46,7 +45,7 @@ class Student
         }
     }
 
-    // Метод для вывода информации о студенте
+    
     public void PrintInfo()
     {
         Console.WriteLine($"Фамилия: {lastName}");
