@@ -6,6 +6,7 @@ class Counter
     {
         value = 0; 
     }
+   
     public Counter(int startValue)
     {
         value = startValue;
