@@ -32,7 +32,7 @@ class Student
         set { groupNumber = value; }
     }
 
-    // Метод для изменения успеваемости
+    
     public void SetGrades(int[] newGrades)
     {
         if (newGrades.Length == 5)
