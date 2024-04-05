@@ -23,7 +23,6 @@ class Numbers
     {
         return Num1 + Num2;
     }
-    
     public int MaxNumber()
     {
         return Math.Max(Num1, Num2);
