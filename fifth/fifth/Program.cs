@@ -40,7 +40,7 @@ class Program
 
         Console.WriteLine();
 
-        // Создание объекта с использованием конструктора по умолчанию
+        // Созданием объект с использованием конструктора по умолчанию
         Practice obj2 = new Practice();
         Console.WriteLine("Объект obj2 (свойства по умолчанию):");
         obj2.DisplayInfo();
