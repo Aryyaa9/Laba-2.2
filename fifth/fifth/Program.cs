@@ -1,32 +1,29 @@
-﻿using System;
-class Practice
-{ 
-    public string Name { get; set; }
+using System;
+class Prictice : IDisposable
+{
     public int Number { get; set; }
-    
-    public Practice(string name, int number)
+    public string Name { get; set; }
+
+    public Prictice(int number, string name)
     {
-        Name = name;
         Number = number;
+        Name = name;
+    }
+
+    public Prictice()
+    {
+        Number = 19;
+        Name = "World";
+    }
+
+    public void DisplayProperties()
+    {
+        Console.WriteLine($"Объект: {Number}, {Name}");
     }
     
-    public Practice()
+    public void Dispose()
     {
-        Name = "Name";
-        Number = 0;
-    }
-
-    // Деструктор
-    ~Practice()
-    {
-        Console.WriteLine("Объект Practice удален из памяти.");
-    }
-
-   
-    public void DisplayInfo()
-    {
-        Console.WriteLine($"Имя: {Name}");
-        Console.WriteLine($"Номер: {Number}");
+        Console.WriteLine($"Удаленный объект: {Number}, {Name}");
     }
 }
 
@@ -34,15 +31,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Practice obj1 = new Practice("Привет", 10);
-        Console.WriteLine("Объект obj1:");
-        obj1.DisplayInfo();
+        using (Prictice obj1 = new Prictice(3759, "Hello"))
+        {
+            obj1.DisplayProperties();
+        }
 
-        Console.WriteLine();
-
-        // Созданием объект с использованием конструктора по умолчанию
-        Practice obj2 = new Practice();
-        Console.WriteLine("Объект obj2 (свойства по умолчанию):");
-        obj2.DisplayInfo();
+        using (Prictice obj2 = new Prictice())
+        {
+            obj2.DisplayProperties();
+        }
     }
 }
