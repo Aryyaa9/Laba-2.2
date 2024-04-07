@@ -4,7 +4,7 @@ class Student
     public string LastName { get; set; }
     public DateTime DateOfBirth { get; set; }
     public string GroupNumber { get; set; }
-    public int[] Grades { get; private set; }
+    public int[] Grades { get; set; }
 
     public Student(string lastName, DateTime dateOfBirth, string groupNumber, int[] grades)
     {
