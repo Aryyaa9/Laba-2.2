@@ -23,7 +23,7 @@ class Student
         }
         else
         {
-            Console.WriteLine("Ошибка: Успеваемость должна содержать 5 оценок.");
+            Console.WriteLine("Успеваемость должна содержать 5 оценок.");
         }
     }
 
@@ -45,7 +45,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Student student = new Student("Иванов", new DateTime(2002, 5, 15), "Группа 102", new int[] { 5, 4, 5, 3, 4 });
+        Student student = new Student("Петров", new DateTime(2002, 5, 15), "Группа 102", new int[] { 5, 4, 5, 3, 4 });
 
         Console.WriteLine("Информация о студенте:");
         student.PrintInfo();
