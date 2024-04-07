@@ -1,5 +1,4 @@
 using System;
-
 class Student
 {
     public string LastName { get; set; }
