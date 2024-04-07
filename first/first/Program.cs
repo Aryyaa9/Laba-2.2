@@ -1,43 +1,26 @@
-﻿using System;
+using System;
+
 class Student
 {
-    private string lastName;
-    private DateTime dateOfBirth;
-    private string groupNumber;
-    private int[] grades;
-    
+    public string LastName { get; set; }
+    public DateTime DateOfBirth { get; set; }
+    public string GroupNumber { get; set; }
+    public int[] Grades { get; private set; }
+
     public Student(string lastName, DateTime dateOfBirth, string groupNumber, int[] grades)
     {
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-        this.groupNumber = groupNumber;
-        this.grades = grades;
-    }
-    
-    public string LastName
-    {
-        get { return lastName; }
-        set { lastName = value; }
+        LastName = lastName;
+        DateOfBirth = dateOfBirth;
+        GroupNumber = groupNumber;
+        SetGrades(grades);
     }
 
-    public DateTime DateOfBirth
-    {
-        get { return dateOfBirth; }
-        set { dateOfBirth = value; }
-    }
-
-    public string GroupNumber
-    {
-        get { return groupNumber; }
-        set { groupNumber = value; }
-    }
-
-    
+    // Фукция для изменения успеваемости
     public void SetGrades(int[] newGrades)
     {
         if (newGrades.Length == 5)
         {
-            grades = newGrades;
+            Grades = newGrades;
         }
         else
         {
@@ -45,16 +28,16 @@ class Student
         }
     }
 
-    
+    // Функция для вывода информации о студенте
     public void PrintInfo()
     {
-        Console.WriteLine($"Фамилия: {lastName}");
-        Console.WriteLine($"Дата рождения: {dateOfBirth.ToShortDateString()}");
-        Console.WriteLine($"Номер группы: {groupNumber}");
+        Console.WriteLine($"Фамилия: {LastName}");
+        Console.WriteLine($"Дата рождения: {DateOfBirth.ToShortDateString()}");
+        Console.WriteLine($"Номер группы: {GroupNumber}");
         Console.WriteLine("Успеваемость:");
-        for (int i = 0; i < grades.Length; i++)
+        for (int i = 0; i < Grades.Length; i++)
         {
-            Console.WriteLine($"Оценка {i + 1}: {grades[i]}");
+            Console.WriteLine($"Оценка {i + 1}: {Grades[i]}");
         }
     }
 }
@@ -63,28 +46,23 @@ class Program
 {
     static void Main(string[] args)
     {
-        Student student = new Student("Иванов", new DateTime(2000, 5, 15), "Группа 101", new int[] { 5, 4, 5, 3, 4 });
-        
-        
+        Student student = new Student("Иванов", new DateTime(2002, 5, 15), "Группа 102", new int[] { 5, 4, 5, 3, 4 });
+
         Console.WriteLine("Информация о студенте:");
         student.PrintInfo();
-        
-        
+
         Console.WriteLine("\nВведите новую фамилию студента:");
         string newLastName = Console.ReadLine();
         student.LastName = newLastName;
 
-       
         Console.WriteLine("\nВведите новую дату рождения студента (гггг-мм-дд):");
         DateTime newDateOfBirth = DateTime.Parse(Console.ReadLine());
         student.DateOfBirth = newDateOfBirth;
 
-        
         Console.WriteLine("\nВведите новый номер группы студента:");
         string newGroupNumber = Console.ReadLine();
         student.GroupNumber = newGroupNumber;
 
-        
         Console.WriteLine("\nОбновленная информация о студенте:");
         student.PrintInfo();
     }
