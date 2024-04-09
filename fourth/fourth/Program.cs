@@ -22,6 +22,7 @@ class Counter
         value--;
     }
     
+    //Св-во для получения текущего значения счетчика
     public int Value
     {
         get { return value; }
@@ -37,7 +38,7 @@ class Program
         counter1.Increment();
         Console.WriteLine("Значение счетчика 1 после увеличения: " + counter1.Value);
         
-        Counter counter2 = new Counter(10);
+        Counter counter2 = new Counter(109);
         
         counter2.Decrement();
         Console.WriteLine("Значение счетчика 2 после уменьшения: " + counter2.Value);
