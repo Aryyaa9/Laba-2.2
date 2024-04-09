@@ -33,19 +33,11 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Введите исходное число 1: ");
-        int number1 = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Введите исходное число 2: ");
-        int number2 = Convert.ToInt32(Console.ReadLine());
+        Numbers numbers = new Numbers(5, 178);
 
-       
-        Numbers numbers = new Numbers(number1, number2);
-
-       
         Console.WriteLine("\nИсходные числа:");
         numbers.DisplayNumbers();
 
-        
         Console.WriteLine("\nВведите новые значения чисел:");
         Console.Write("Число 1: ");
         int newNumber1 = Convert.ToInt32(Console.ReadLine());
@@ -58,7 +50,6 @@ class Program
         numbers.DisplayNumbers();
         
         Console.WriteLine($"\nСумма чисел: {numbers.SumOfNumbers()}");
-        
         Console.WriteLine($"Наибольшее число: {numbers.MaxNumber()}");
     }
 }
