@@ -29,7 +29,7 @@ class Prictice : IDisposable
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         using (Prictice obj1 = new Prictice(3759, "Hello"))
         {
