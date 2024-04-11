@@ -1,16 +1,16 @@
 using System;
-class Prictice : IDisposable
+class Prаctice : IDisposable
 {
     public int Number { get; set; }
     public string Name { get; set; }
 
-    public Prictice(int number, string name)
+    public Prаctice(int number, string name)
     {
         Number = number;
         Name = name;
     }
 
-    public Prictice()
+    public Prаctice()
     {
         Number = 19;
         Name = "World";
@@ -31,12 +31,12 @@ class Program
 {
     static void Main()
     {
-        using (Prictice obj1 = new Prictice(3759, "Hello"))
+        using (Prаctice obj1 = new Prаctice(3759, "Hello"))
         {
             obj1.DisplayProperties();
         }
 
-        using (Prictice obj2 = new Prictice())
+        using (Prаctice obj2 = new Prаctice())
         {
             obj2.DisplayProperties();
         }
